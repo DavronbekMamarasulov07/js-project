@@ -23,6 +23,7 @@ function updateCartCount() {
     const cartCountElement = document.getElementById('cartCount');
     cartCountElement.textContent = cart.length;
 }
+updateCartCount();  
 
 
 
