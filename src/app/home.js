@@ -24,7 +24,7 @@ function updateCartCount() {
     cartCountElement.textContent = cart.length;
 }
 
-updateCartCount();  
+
 
 async function fetchProducts() {
     try {
@@ -92,6 +92,7 @@ function addToCart(product) {
 
     localStorage.setItem("cart", JSON.stringify(cart));
     showNotification("Product added to cart!", true);
+    updateCartCount();  
 }
 
 function showNotification(message, isSuccess = true) {
